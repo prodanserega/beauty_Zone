@@ -1,26 +1,45 @@
-.roboto-regular {
-  font-family: 'Roboto', sans-serif;
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
+  src: url('../fonts/roboto-v32-latin-regular.woff2') format('woff2');
 }
 
-.roboto-bold {
-  font-family: 'Roboto', sans-serif;
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
-  font-style: normal;
+  src: url('../fonts/roboto-v32-latin-700.woff2') format('woff2');
 }
 
-.play-regular {
-  font-family: 'Play', sans-serif;
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
 }
 
-.play-bold {
-  font-family: 'Play', sans-serif;
-  font-weight: 700;
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
   font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
 }
+
+:root {
+  --color-primary-light: #ffffff;
+  --color-primary-blue: #2b7fff;
+  --color-primary-dark: #011c44;
+  --color-secondary-grey: #747272;
+  --color-secondary-dark-grey: #4a4a4a;
+  --color-secondary-dark: #011f4a;
+  --color-secondary-yellow: #ffd02b;
+}
+
 /*base*/
 *,
 *::after,
@@ -31,10 +50,10 @@
 body {
   background-color: var(--color-primary-light);
   color: var(--color-primary-dark);
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.5;
+  font-family: 'Robot';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
   margin: 0;
   z-index: 1;
 }
@@ -58,6 +77,7 @@ img {
 
 a {
   display: inline-block;
+  text-decoration: none;
 }
 
 address {
@@ -67,6 +87,7 @@ address {
 ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .visually-hidden {
@@ -82,4 +103,64 @@ ul {
   width: 100%;
   max-width: 1288px;
   margin: auto;
+}
+
+/*header*/
+.header {
+  /*position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;*/
+  padding-top: 32px;
+}
+
+.header__container {
+  display: flex;
+  gap: 240px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.header__menu {
+  display: flex;
+  gap: 56px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.header__social {
+  display: flex;
+  gap: 40px;
+}
+
+.header__logo {
+  font-family: 'Play';
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  color: var(--color-primary-blue);
+}
+
+.link {
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.link:hover {
+  color: var(--color-primary-blue);
+}
+
+.header__icon {
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.header__icon:hover {
+  fill: var(--color-primary-blue);
 }
