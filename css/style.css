@@ -193,9 +193,6 @@ ul {
   padding-left: 140px;
 }
 
-.hero__logo-container {
-}
-
 .hero__text {
   margin-bottom: 16px;
 }
@@ -221,9 +218,44 @@ ul {
   margin-bottom: 14px;
 }
 
-.hero__info{
+.hero__info {
   font-size: 12px;
   line-height: 1.5;
   max-width: 238px;
+}
 
+/*about*/
+
+.about__container {
+  padding-top: 126px;
+  padding-bottom: 176px;
+  max-width: 600px;
+}
+
+.about__title {
+  font-family: 'Play';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.accent {
+  color: var(--color-primary-blue);
+}
+
+.about__text {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.about__text:first-of-type{
+  margin-bottom: 40px;
+}
+
+
+
+.about__text-bold {
+  font-weight: 600;
 }
