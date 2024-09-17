@@ -107,16 +107,19 @@ ul {
 
 /*header*/
 .header {
-  /*position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;*/
-  padding-top: 32px;
+  right: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(4px);
 }
 
 .header__container {
   display: flex;
-  gap: 240px;
+  gap: 40px;
+  padding: 32px;
 }
 
 .header__nav {
@@ -163,4 +166,35 @@ ul {
 
 .header__icon:hover {
   fill: var(--color-primary-blue);
+}
+
+/*hero*/
+
+.hero {
+  background: linear-gradient(
+      89deg,
+      #fff 30.62%,
+      rgba(255, 255, 255, 0.85) 41.31%,
+      rgba(255, 255, 255, 0.19) 58.65%,
+      rgba(255, 255, 255, 0) 72.78%
+    ),
+    url(../images/doctar.jpg) no-repeat;
+  background-size: contain;
+  background-position: center top;
+  width: 100%;
+}
+
+.hero__container {
+  padding: 0 0 126px 106px;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__logo-container {
+  align-items: flex-start;
+  padding-top: 122px;
+}
+
+.hero__text {
 }
