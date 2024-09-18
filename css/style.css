@@ -250,12 +250,47 @@ ul {
   line-height: 1.5;
 }
 
-.about__text:first-of-type{
+.about__text:first-of-type {
   margin-bottom: 40px;
 }
 
-
-
 .about__text-bold {
   font-weight: 600;
+}
+
+/*advantages*/
+
+.advantages__container {
+  padding-bottom: 96px;
+}
+
+.advantages__title {
+  font-family: 'Play';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  margin: 0 auto 48px auto;
+  max-width: 432px;
+}
+
+.advantages__item {
+  display: flex;
+  gap: 54px;
+ flex-wrap: wrap;
+justify-content: center;
+}
+
+.advantages__list{
+  padding: 24px 32px;
+  background-color:var(--color-primary-light);
+  border-radius: 32px;
+  max-width: 292px;
+  box-shadow: 0px 4px 4px 0px #A8C6F561;
+  text-align: center;
+
+}
+
+.advantages__icon{
+  fill: var(--color-primary-blue);
 }
