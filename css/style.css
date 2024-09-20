@@ -277,20 +277,136 @@ ul {
 .advantages__item {
   display: flex;
   gap: 54px;
- flex-wrap: wrap;
-justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.advantages__list{
+.advantages__list {
   padding: 24px 32px;
-  background-color:var(--color-primary-light);
+  background-color: var(--color-primary-light);
   border-radius: 32px;
   max-width: 292px;
-  box-shadow: 0px 4px 4px 0px #A8C6F561;
+  box-shadow: 0px 4px 4px 0px #a8c6f561;
   text-align: center;
-
 }
 
-.advantages__icon{
+.advantages__icon {
   fill: var(--color-primary-blue);
 }
+
+/*procedures*/
+
+.procedures__title {
+  font-family: 'Play';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  margin: 0 auto 48px auto;
+}
+
+.procedures__slider {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 96px;
+}
+
+.procedures__item {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-button {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+
+.carousel-button.prev {
+  transform: rotate(180deg);
+}
+
+.carousel-arraw {
+  fill: var(--color-primary-dark);
+}
+
+.carousel-button:hover {
+  background-color: var(--color-primary-blue);
+  border: var(--color-primary-blue);
+}
+
+.carousel-button:hover .carousel-arraw {
+  fill: var(--color-primary-light);
+}
+
+.procedures__container {
+  overflow: hidden;
+}
+
+.procedures__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 456px;
+  width: 344px;
+  gap: 0px;
+  border-radius: 4px 120px 4px 120px;
+  opacity: 0px;
+  rotate: -180 deg;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
+}
+
+.procedures__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 4px 120px 4px 120px;
+  align-items: center;
+}
+
+.procedures__card-title {
+  max-width: 152px;
+  color: var(--color-primary-light);
+  font-size: 22px;
+  text-align: center;
+  margin: 0 auto 32px;
+}
+
+/*.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.pagination__button {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-secondary-dark);
+  border-radius: 50%;
+  padding: 0;
+}
+
+.pagination--active {
+  background-color: var(--color-brand-normal);
+}
+*/
