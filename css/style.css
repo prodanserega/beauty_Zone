@@ -415,9 +415,22 @@ ul {
 
 /*footer*/
 
-.footer{
+.footer {
   background-color: var(--color-primary-dark);
   padding: 56px 0;
+  position: relative;
+}
+
+.footer::after {
+  position: absolute;
+  background-image: url('/images/footer-priparaty.png');
+  content: '';
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+  height: 150px;
+  display: block;
 }
 
 .footer__container {
@@ -465,8 +478,18 @@ ul {
 
 .footer__social-list {
   margin-right: 24px;
-  fill:var(--color-primary-light)
+  fill: var(--color-primary-light);
 }
+
+.footer__icon {
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.footer__icon:hover {
+  fill: var(--color-primary-blue);
+}
+
 .footer__menu-list {
   margin-bottom: 16px;
 }
@@ -491,7 +514,80 @@ ul {
   line-height: 1;
 }
 
-
-.footer__link:hover{
+.footer__link:hover {
   color: var(--color-primary-blue);
+}
+
+/*backdrop*/
+
+.backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1, 31, 74, 0.4);
+  padding: 20px 0;
+  transition: opacity 1s, visibility 1s;
+  z-index: 1000;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/*modal*/
+
+.modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 725px;
+  height: 100%;
+  max-height: 680px;
+  background-color: var(--color-primary-dark);
+  border-radius: 48px;
+  padding: 42px 144px;
+  overflow-y: auto;
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__icon {
+  fill: var(--color-primary-light);
+}
+
+.modal__title {
+  font-family: 'Play';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--color-primary-light);
+  margin-bottom: 40px;
+}
+
+.modal__text {
+  color: var(--color-primary-light);
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  width: 274px;
 }

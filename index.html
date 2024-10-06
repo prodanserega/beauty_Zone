@@ -48,7 +48,9 @@
               <p class="hero__text">Косметологічна клініка</p>
               <h1 class="hero__title">Beauty <br />Zone</h1>
             </div>
-            <button class="hero__button" type="button">Замовити дзвінок</button>
+            <button class="hero__button modal-btn-open" type="button">
+              Замовити дзвінок
+            </button>
             <p class="hero__info">
               Запишись та отримай безкоштовну консультацію нашого косметолога
             </p>
@@ -259,7 +261,9 @@
           <address class="footer__address">
             <ul class="footer__address-item">
               <li class="footer__address-list">
-                <a class="footer__address-link footer__link" href="tel:+380960000007"
+                <a
+                  class="footer__address-link footer__link"
+                  href="tel:+380960000007"
                   >+ 38 (096) 000 00 07</a
                 >
               </li>
@@ -281,30 +285,55 @@
             </ul>
             <ul class="footer__social">
               <li class="footer__social-list">
-                <svg width="32" height="32">
+                <svg class="footer__icon" width="32" height="32">
                   <use href="./images/symbol-defs.svg#icon-telephone"></use>
                 </svg>
               </li>
               <li class="footer__social-list">
-                <svg width="32" height="32">
+                <svg class="footer__icon" width="32" height="32">
                   <use href="./images/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </li>
               <li class="footer__social-list">
-                <svg width="32" height="32">
+                <svg class="footer__icon" width="32" height="32">
                   <use href="./images/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </li>
             </ul>
           </address>
           <div class="footer__address-info">
-            <a class="footer__link" href="#" target="_blank">Політика конфіденційності</a>
+            <a class="footer__link" href="#" target="_blank"
+              >Політика конфіденційності</a
+            >
             <p class="footer__address-copyright">&copy; 2024 Дані захищені</p>
           </div>
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal__btn-close modal-btn-close" type="buttom">
+          <svg class="modal__icon" width="16" height="16">
+            <use href="/images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+        <h2 class="modal__title">Замовити дзвінок</h2>
+        <p class="modal__text">
+          Запишіться <span class="accent">безкоштовно</span> та отримайте
+          подарунок
+        </p>
+        <form name="contact-form" autocapitalize="off">
+          <div class="modal__form-field imput">
+            <label class="imput__label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+            <input class="imput__control" type="text" id="user-name" name="user-name" placeholder="Ваше ім'я та прізвище" minlength="2" maxlength="10"  required>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
