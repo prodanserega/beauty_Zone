@@ -325,9 +325,56 @@
         </p>
         <form name="contact-form" autocapitalize="off">
           <div class="modal__form-field imput">
-            <label class="imput__label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
-            <input class="imput__control" type="text" id="user-name" name="user-name" placeholder="Ваше ім'я та прізвище" minlength="2" maxlength="10"  required>
+            <label class="imput__label visually-hidden" for="user-name"
+              >Ваше ім'я та прізвище</label
+            >
+            <input
+              class="imput__control"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Ваше ім'я та прізвище"
+              minlength="2"
+              maxlength="10"
+              required
+            />
           </div>
+          <div class="modal__form-field imput">
+            <label class="imput__label visually-hidden" for="user-tel"
+              >Ваш номер телефону</label
+            >
+            <input
+              pattern="^\+[0-9]{12}"
+              class="imput__control"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Ваш номер телефону"
+              required
+            />
+          </div>
+          <div class="modal__form-field imput">
+            <label class="imput__label visually-hidden" for="user-email"
+              >Ваша електронна пошта</label
+            >
+            <input
+              class="imput__control"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Ваша електронна пошта"
+              required
+            />
+          </div>
+          <button class="modal__button button" type="submit">
+            Записатись безкоштовно
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="form-terms__link" href="#"
+              >з політикою конфіденційності</a
+            >
+          </p>
         </form>
       </div>
     </div>

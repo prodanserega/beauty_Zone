@@ -570,7 +570,8 @@ ul {
 }
 
 .modal__icon {
-  fill: var(--color-primary-light);
+ fill: var(--color-primary-light);
+ background-color: var(--color-primary-dark);
 }
 
 .modal__title {
@@ -587,7 +588,73 @@ ul {
   color: var(--color-primary-light);
   font-size: 22px;
   font-weight: 600;
-  margin-left: auto;
+  margin: 0 auto 32px;
   margin-right: auto;
   width: 274px;
+}
+
+.input {
+  position: relative;
+}
+
+.imput__label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+  background-color: #747272;
+}
+
+.imput__control {
+  padding: 18px 32px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.17;
+  border: 2px solid var(--color-secondary-grey);
+  border-radius: 32px;
+  background-color: transparent;
+  margin-bottom: 24px;
+  color: var(--color-primary-light);
+}
+
+.imput__control:focus {
+  border: var(--color-secondary-grey);
+  background-color: var(--color-secondary-grey);
+  outline: none;
+}
+
+.imput__control::placeholder {
+  color: var(--color-primary-light);
+}
+
+.button {
+  font-weight: 600;
+  color: var(--color-primary-light);
+  padding: 16px 32px 16px 32px;
+  cursor: pointer;
+  border-radius: 32px;
+  border: none;
+  opacity: 0px;
+  background-color: var(--color-primary-blue);
+  margin-bottom: 14px;
+}
+
+.modal__button {
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.form-terms {
+  color: var(--color-secondary-grey);
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-terms__link {
+  color: var(--color-secondary-grey);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
