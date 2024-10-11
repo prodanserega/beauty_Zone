@@ -4,19 +4,19 @@ const swiper = new Swiper('.swiper-container', {
   spaceBetween: 20,
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView:2,
     },
 
     1280: {
-      slidesPerView: 3,
+      slidesPerView:3,
     },
   },
 
-  /*pagination: {
+  pagination: {
     el: '.pagination',
     bulletClass: 'pagination__button',
     bulletActiveClass: 'pagination__button--active',
-  },*/
+  },
 
   navigation: {
     nextEl: '.carousel-button.next',

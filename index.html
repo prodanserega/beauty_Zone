@@ -188,29 +188,14 @@
                   </article>
                 </li>
               </ul>
+              <div class="pagination">
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+              </div>
             </div>
-            <!-- <div class="pagination">
-              <button
-                class="pagination__button"
-                type="button"
-                aria-label="Go to slide 1"
-              ></button>
-              <button
-                class="pagination__button"
-                type="button"
-                aria-label="Go to slide 2"
-              ></button>
-              <button
-                class="pagination__button"
-                type="button"
-                aria-label="Go to slide 3"
-              ></button>
-              <button
-                class="pagination__button"
-                type="button"
-                aria-label="Go to slide 4"
-              ></button>
-            </div>-->
+
             <button
               class="procedures__button carousel-button next"
               type="buttom"
@@ -224,17 +209,77 @@
       </section>
       <section class="contacts">
         <div class="container">
-          <h2>Як нас <span>знайти</span></h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2sTarasa%20Shevchenka%20St%2C%205%2C%20Brovary%2C%20Kyivs&#39;ka%20oblast%2C%2007400!5e0!3m2!1sen!2sua!4v1726425262096!5m2!1sen!2sua"
-            width="605"
-            height="481"
-            style="border-radius: 32px"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <h2 class="contacts__title">
+            Як нас <span class="accent">знайти</span>
+          </h2>
+          <div class="contacts__container">
+            <iframe
+              class="contacts__map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2537.475791668505!2d30.775223399999994!3d50.50671339999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d97de411b701%3A0x48116b28f7f00d94!2sTarasa%20Shevchenka%20St%2C%205%2C%20Brovary%2C%20Kyivs&#39;ka%20oblast%2C%2007400!5e0!3m2!1sen!2sua!4v1726425262096!5m2!1sen!2sua"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <div class="contacts__form">
+              <p class="contacts__text">
+                Запишіться <span class="accent">безкоштовно</span> та отримайте
+                подарунок
+              </p>
+              <form name="contact-form" autocapitalize="off">
+                <div class="contacts__form-field imput">
+                  <label class="imput__label visually-hidden" for="user-name"
+                    >Ваше ім'я та прізвище</label
+                  >
+                  <input
+                    class="imput__control"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ваше ім'я та прізвище"
+                    minlength="2"
+                    maxlength="10"
+                    required
+                  />
+                </div>
+                <div class="contacts__form-field imput">
+                  <label class="imput__label visually-hidden" for="user-tel"
+                    >Ваш номер телефону</label
+                  >
+                  <input
+                    pattern="^\+[0-9]{12}"
+                    class="imput__control"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Ваш номер телефону"
+                    required
+                  />
+                </div>
+                <div class="contacts__form-field imput">
+                  <label class="imput__label visually-hidden" for="user-email"
+                    >Ваша електронна пошта</label
+                  >
+                  <input
+                    class="imput__control"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Ваша електронна пошта"
+                    required
+                  />
+                </div>
+                <button class="contacts__button button" type="submit">
+                  Записатись безкоштовно
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a class="form-terms__link" href="#"
+                    >з політикою конфіденційності</a
+                  >
+                </p>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
