@@ -107,6 +107,9 @@ ul {
   padding: 0 24px;
 }
 
+.accent {
+  color: var(--color-primary-blue);
+}
 /*header*/
 .header {
   position: absolute;
@@ -229,8 +232,13 @@ ul {
 /*about*/
 
 .about__container {
+  display: flex;
   padding-top: 126px;
   padding-bottom: 176px;
+  gap: 20px;
+}
+
+.about__description {
   max-width: 600px;
 }
 
@@ -241,10 +249,6 @@ ul {
   line-height: 1.15;
   text-align: left;
   margin-bottom: 40px;
-}
-
-.accent {
-  color: var(--color-primary-blue);
 }
 
 .about__text {
@@ -258,6 +262,25 @@ ul {
 
 .about__text-bold {
   font-weight: 600;
+}
+
+.about__images {
+  flex-basis: 50%;
+  position: relative;
+}
+
+.about__image-black {
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  right: 163.5px;
+}
+
+.about__image-white {
+  position: absolute;
+  border-radius: 50%;
+  right: 0;
+  bottom: 0;
 }
 
 /*advantages*/
@@ -316,7 +339,6 @@ ul {
 
 .procedures__item {
   display: flex;
-  justify-content: center;
 }
 
 .carousel-button {
@@ -412,7 +434,6 @@ ul {
   background-color: var(--color-primary-blue);
 }
 
-
 /*contacts*/
 .contacts {
   padding-bottom: 96px;
@@ -452,7 +473,6 @@ ul {
   margin: 0 auto 32px;
   width: 274px;
   text-align: center;
-
 }
 
 .contacts__button {
