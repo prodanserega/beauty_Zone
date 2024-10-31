@@ -231,11 +231,14 @@ ul {
 
 /*about*/
 
+.about {
+  padding-bottom: 175px;
+}
+
 .about__container {
   display: flex;
-  padding-top: 126px;
-  padding-bottom: 176px;
-  gap: 20px;
+  height: 625px;
+  gap: 40px;
 }
 
 .about__description {
@@ -273,7 +276,7 @@ ul {
   position: absolute;
   border-radius: 50%;
   top: 0;
-  right: 163.5px;
+  left: 0;
 }
 
 .about__image-white {
@@ -283,7 +286,33 @@ ul {
   bottom: 0;
 }
 
+.about__icon-large  {
+  position: absolute;
+  right: 0;
+  top: 336px;
+  left: 117px;
+  
+  z-index: 10;
+  /*animation: rotate360 2s ease infinite;*/
+}
+
 /*advantages*/
+
+.advantages {
+  position: relative;
+  padding: 85px 0;
+}
+
+.advantages::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/background.png);
+  background-size: cover;
+  z-index: -10;
+}
 
 .advantages__container {
   padding-bottom: 96px;
