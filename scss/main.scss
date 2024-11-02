@@ -286,16 +286,33 @@ ul {
   bottom: 0;
 }
 
-.about__icon-large  {
+.about__icon-large {
   position: absolute;
   right: 0;
-  top: 336px;
-  left: 117px;
-  
+  top: 350px;
+  left: 180px;
+  color: var(--color-primary-dark);
   z-index: 10;
   /*animation: rotate360 2s ease infinite;*/
 }
 
+.about__icon-middle {
+  display: block;
+  position: absolute;
+  color: var(--color-primary-blue);
+  top: 32px;
+  right: -32px;
+  z-index: 10;
+}
+
+.about__icon-small {
+  display: block;
+  position: absolute;
+  color: var(--color-secondary-grey);
+  top: 269px;
+  right: 0;
+  z-index: 10;
+}
 /*advantages*/
 
 .advantages {
