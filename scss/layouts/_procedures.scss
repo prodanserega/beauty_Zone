@@ -1,0 +1,63 @@
+.procedures {
+  &__title {
+    font-family: 'Play';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+    margin: 0 auto 48px auto;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 96px;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 456px;
+    width: 344px;
+    gap: 0px;
+    border-radius: 4px 120px 4px 120px;
+    opacity: 0px;
+    rotate: -180 deg;
+    background-image: linear-gradient(
+      180.05deg,
+      rgba(1, 28, 68, 0) 48.53%,
+      rgba(1, 28, 68, 0.725825) 84.61%,
+      #011c44 101.39%
+    );
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 4px 120px 4px 120px;
+    align-items: center;
+  }
+
+  &__card-title {
+    max-width: 152px;
+    color: var(--color-primary-light);
+    font-size: 22px;
+    text-align: center;
+    margin: 0 auto 32px;
+  }
+}

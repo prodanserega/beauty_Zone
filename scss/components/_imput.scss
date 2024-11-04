@@ -1,0 +1,32 @@
+.imput {
+  position: relative;
+
+  &__label {
+    position: absolute;
+    top: 16px;
+    left: 42px;
+    background-color: #747272;
+  }
+
+  &__control {
+    padding: 18px 32px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.17;
+    border: 2px solid var(--color-secondary-grey);
+    border-radius: 32px;
+    background-color: transparent;
+    margin-bottom: 24px;
+    color: var(--color-primary-light);
+  }
+
+  &__control:focus {
+    border: var(--color-secondary-grey);
+    background-color: var(--color-secondary-grey);
+    outline: none;
+  }
+
+  &__control::placeholder {
+    color: var(--color-primary-light);
+  }
+}

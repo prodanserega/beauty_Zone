@@ -1,0 +1,82 @@
+.about {
+  padding-bottom: 175px;
+
+  .about__container {
+    display: flex;
+    height: 625px;
+    gap: 40px;
+  }
+
+  &__description {
+    max-width: 600px;
+  }
+
+  &__title {
+    font-family: 'Play';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  &__text:first-of-type {
+    margin-bottom: 40px;
+  }
+
+  &__text-bold {
+    font-weight: 600;
+  }
+
+  &__images {
+    flex-basis: 50%;
+    position: relative;
+  }
+
+  &__image-black {
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+  }
+
+  &__image-white {
+    position: absolute;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__icon-large {
+    position: absolute;
+    right: 0;
+    top: 350px;
+    left: 180px;
+    color: var(--color-primary-dark);
+    z-index: 10;
+    /*animation: rotate360 2s ease infinite;*/
+  }
+
+  &__icon-middle {
+    display: block;
+    position: absolute;
+    color: var(--color-primary-blue);
+    top: 32px;
+    right: -32px;
+    z-index: 10;
+  }
+
+  &__icon-small {
+    display: block;
+    position: absolute;
+    color: var(--color-secondary-grey);
+    top: 269px;
+    right: 0;
+    z-index: 10;
+  }
+}

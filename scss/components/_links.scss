@@ -1,0 +1,9 @@
+.link {
+  color: var(--color-primary-dark);
+  cursor: pointer;
+  transition: color 0.5s;
+
+  &:hover {
+    color: var(--color-primary-blue);
+  }
+}

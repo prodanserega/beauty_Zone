@@ -1,0 +1,45 @@
+.contacts {
+  padding-bottom: 96px;
+
+  &__form {
+  padding: 40px 75px;
+  background-color: var(--color-primary-dark);
+  border-radius: 32px;
+}
+
+&__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+}
+
+&__title {
+  font-family: 'Play';
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+&__map {
+  width: 605px;
+  border-radius: 32px;
+}
+
+&__text {
+  color: var(--color-primary-light);
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 auto 32px;
+  width: 274px;
+  text-align: center;
+}
+
+&__button {
+  display: block;
+  margin: 0 auto 8px;
+}
+}
+
