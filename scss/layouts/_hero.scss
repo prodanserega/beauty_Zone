@@ -1,6 +1,5 @@
 .hero {
   margin: 0 auto;
-
   background: linear-gradient(
       89deg,
       #fff 30.62%,
@@ -14,40 +13,63 @@
   background-position: right top;
   background-size: cover;
 
+  @media screen and (max-width: $bp-desktop) {
+    background-position: 60% top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   &__container {
-  padding-top: 140px;
-  padding-left: 140px;
-}
+    margin: 0 auto;
+    padding-top: 140px;
+    padding-left: 140px;
+    @media screen and (max-width: $bp-desktop) {
+      text-align: center;
+    }
+  }
 
-&__text {
-  margin-bottom: 16px;
-}
+  &__logo-container {
+    @media screen and (min-width: $bp-desktop) {
+      width: 530px;
+    }
+    
+  }
 
-&__title {
-  font-family: 'Play';
-  font-size: 140px;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--color-primary-blue);
-  margin-bottom: 40px;
-}
+  &__text {
+    margin-bottom: 16px;
+  }
 
-&__button {
-  font-weight: 600;
-  color: var(--color-primary-light);
-  padding: 16px 32px 16px 32px;
-  cursor: pointer;
-  border-radius: 32px;
-  border: none;
-  opacity: 0px;
-  background-color: var(--color-primary-blue);
-  margin-bottom: 14px;
-}
+  &__title {
+    font-family: 'Play';
+    font-size: 140px;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--color-primary-blue);
+    margin-bottom: 40px;
 
-&__info {
-  font-size: 12px;
-  line-height: 1.5;
-  max-width: 238px;
-}
-}
+    @media screen and (max-width: $bp-desktop) {
+      font-size: 54px;
+    }
+  }
 
+  &__button {
+    font-weight: 600;
+    color: var(--color-primary-light);
+    padding: 16px 32px 16px 32px;
+    cursor: pointer;
+    border-radius: 32px;
+    border: none;
+    opacity: 0px;
+    background-color: var(--color-primary-blue);
+    margin-bottom: 14px;
+  }
+
+  &__info {
+    font-size: 12px;
+    line-height: 1.5;
+    max-width: 238px;
+    @media screen and (max-width: $bp-desktop) {
+      margin: 0 auto;
+    }
+  }
+}
