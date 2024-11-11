@@ -1,22 +1,31 @@
 .hero {
   margin: 0 auto;
   background: linear-gradient(
-      89deg,
-      #fff 30.62%,
-      rgba(255, 255, 255, 0.85) 41.31%,
-      rgba(255, 255, 255, 0.19) 58.65%,
-      rgba(255, 255, 255, 0) 72.78%
+      56.68deg,
+      #ffffff 20.92%,
+      rgba(255, 255, 255, 0.78) 44.46%,
+      rgba(255, 255, 255, 0.2) 58.9%,
+      rgba(255, 255, 255, 0) 72.45%
     ),
     url(../images/doctar.jpg) no-repeat;
-  max-width: 1440px;
-  min-height: 800px;
-  background-position: right top;
+  max-width: 490px;
+  min-height: 325px;
+  width: 100%;
   background-size: cover;
+  background-position: center;
 
-  @media screen and (max-width: $bp-desktop) {
-    background-position: 60% top;
-    background-repeat: no-repeat;
-    background-size: cover;
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 1440px;
+    min-height: 800px;
+    background-position: top right;
+    background: linear-gradient(
+        89deg,
+        #fff 30.62%,
+        rgba(255, 255, 255, 0.85) 41.31%,
+        rgba(255, 255, 255, 0.19) 58.65%,
+        rgba(255, 255, 255, 0) 72.78%
+      ),
+      url(../images/doctar.jpg) no-repeat;
   }
 
   &__container {
@@ -25,6 +34,7 @@
     padding-left: 140px;
     @media screen and (max-width: $bp-desktop) {
       text-align: center;
+      padding-left: 0;
     }
   }
 
@@ -32,7 +42,6 @@
     @media screen and (min-width: $bp-desktop) {
       width: 530px;
     }
-    
   }
 
   &__text {
