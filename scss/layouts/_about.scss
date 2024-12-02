@@ -1,8 +1,11 @@
 .about {
-  padding-bottom: 175px;
+  padding-bottom: 104px;
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 175px;
+  }
 
   .about__container {
-    height: 400px;
+    
     @media screen and (min-width: $bp-tablet) {
       display: flex;
       height: 625px;
