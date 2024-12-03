@@ -6,9 +6,15 @@
   }
 
   &__form {
-    padding: 40px 75px;
+    padding: 42px 24px;
     background-color: var(--color-primary-dark);
     border-radius: 32px;
+    max-width: 423px;
+    max-height: 500px;
+    flex-basis: 40%;
+    border: 0;
+     @media screen and (min-width: $bp-tablet) {
+     padding: 48px 75px;}
   }
 
   &__container {
@@ -46,7 +52,7 @@
     @media screen and (min-width: $bp-tablet) {
       width: 605px;
       border-radius: 32px;
-      height: 605px;
+      height: 500px;
       margin: 0;
     }
   }
