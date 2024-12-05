@@ -6,6 +6,7 @@
   }
 
   &__form {
+    margin: 0 auto;
     padding: 42px 24px;
     background-color: var(--color-primary-dark);
     border-radius: 32px;
@@ -15,6 +16,9 @@
     border: 0;
      @media screen and (min-width: $bp-tablet) {
      padding: 48px 75px;}
+     @media screen and (min-width: $bp-desktop) {
+     margin: 0;}
+  
   }
 
   &__container {

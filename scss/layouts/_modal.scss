@@ -28,9 +28,11 @@
   max-height: 685px;
   background-color: var(--color-primary-dark);
   border-radius: 48px;
-  padding: 42px 144px;
+  padding: 42px 64px;
   overflow-y: auto;
-
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 144px;
+  }
   &__btn-close {
     position: absolute;
     top: 40px;
@@ -51,12 +53,15 @@
 
   &__title {
     font-family: 'Play';
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 1.1;
     text-align: center;
     color: var(--color-primary-light);
     margin-bottom: 40px;
+    @media screen and (min-width: $bp-tablet) {
+    font-size: 64px;
+  }
   }
 
   &__text {
